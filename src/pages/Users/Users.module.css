@@ -1,0 +1,17 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    animation: transitionIn 1s;
+    margin: 0 50px;
+}
+
+.userHeader {
+    font-family: 'Racing Sans One', cursive;
+}
+
+.userList {
+    font-family: 'Josefin Sans', sans-serif !important;
+}

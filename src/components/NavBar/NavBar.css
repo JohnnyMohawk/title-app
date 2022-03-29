@@ -1,0 +1,215 @@
+.navbar {
+    background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.25rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    max-width: 100%;
+}
+
+.navbar-logo {
+    color: #fff;
+    justify-self: start;
+    margin-left: 15px;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: 'Racing Sans One', cursive;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    transition: all 0.2s ease-in;
+}
+
+.navbar-logo:hover {
+    color: tomato;
+    transition: all 0.2s ease-in;
+}
+
+.fa-typo3 {
+    margin-left: 0.5rem;
+    font-size: 1.8rem;
+}
+
+.nav-menu {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-gap: 10px;
+    list-style: none;
+    text-align: center;
+    width: 60vw;
+    justify-content: end;
+    margin-right: 2rem;
+}
+
+.nav-item,
+.nav-user {
+    height: 80px;
+    font-family: 'PT Sans', sans-serif;
+    margin: auto 0;
+    display: flex;
+    align-items: center;
+}
+
+.nav-links {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    width: 100px;
+    padding: 8px;
+}
+
+.logSignButton {
+    margin-right: 15px;
+    font-family: 'PT Sans', sans-serif !important;
+}
+
+.nav-user {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+
+.nav-links:hover {
+    color: #fff;
+    background: tomato;
+    transition: all 0.3s ease-out;
+    border-radius: 2px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.fa-bars {
+    color: #fff;
+}
+
+.nav-links-mobile {
+    display: none;
+}
+
+.menu-icon {
+    display: none;
+}
+
+@media screen and (max-width: 960px) {
+    .NavbarItems {
+        position: relative;
+    }
+
+    .nav-menu {
+        display: inline-block;
+        vertical-align: top;
+        width: 100%;
+        height: calc(90vh - 80px);
+        position: absolute;
+        top: 60px;
+        left: -100%;
+        opacity: 1;
+        transition: all 0.5s ease;
+    }
+
+    .nav-menu.active {
+        vertical-align: top;
+        background: #242222fa;
+        left: 0;
+        opacity: 1;
+        transition: all 0.5s ease;
+        z-index: 1;
+        padding: 0;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        padding-top: 20vh;
+    }
+
+    .nav-links {
+        width: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav-item,
+    .nav-user {
+        height: 80px;
+        margin: 0;
+    }
+
+    .nav-user {
+        margin-top: -80px;
+    }
+
+    .nav-links:hover {
+        color: #fff;
+        background: tomato;
+        transition: all 0.3s ease-out;
+        border-radius: 2px;
+        outline: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    .navbar-logo {
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translate(25%, 50%);
+    }
+
+    .menu-icon {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translate(-100%, 60%);
+        font-size: 1.8rem;
+        cursor: pointer;
+    }
+
+    .fa-times {
+        color: #fff;
+        font-size: 2rem;
+    }
+
+    .nav-links-mobile {
+        display: block;
+        text-align: center;
+        border-radius: 4px;
+        width: 70%;
+        text-decoration: none;
+        font-size: 1.5rem;
+        background-color: transparent;
+        color: #fff;
+        padding: 14px 10px;
+        transition: all 0.3s ease-out;
+        font-family: 'PT Sans', sans-serif;
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .navbar-logo {
+        margin-left: -30px;
+        font-size: 1.75rem;
+        margin-top: 4px;
+    }
+}
