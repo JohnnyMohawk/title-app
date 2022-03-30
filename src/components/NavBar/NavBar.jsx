@@ -31,8 +31,8 @@ function Navbar({ user, handleLogout, handleSignupOrLogin }) {
         <nav className='navbar'>
             <div className='navbar-container'>
             <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
-                JNAJWTAUTH
                 <i class="fas fa-code"></i>
+                TITLE
             </Link>
             <div className='menu-icon' onClick={handleClick}>
                 <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
